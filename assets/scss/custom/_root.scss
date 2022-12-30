@@ -1,0 +1,30 @@
+:root {
+  --red-hue: 360;
+  --blue-hue: 240;
+  --green-hue: 120;
+  --main-hue: var(--red-hue);
+  --nav-bg-color: hsl(var(--main-hue), 50%, 50%);
+  --nav-text-color: hsl(var(--main-hue), 50%, 10%);
+  --container-bg-color: hsl(var(--main-hue), 50%, 95%);
+  --content-text-color: hsl(var(--main-hue), 50%, 50%);
+  --title-color: hsl(var(--main-hue), 50%, 20%);
+  --footer-bg-color: hsl(var(--main-hue), 93%, 88%);
+  --button-text-color: hsl(var(--main-hue), 50%, 20%);
+}
+
+:root[theme='red'] {
+  --main-hue: var(--red-hue);
+}
+
+:root[theme='blue'] {
+  --main-hue: var(--blue-hue);  
+}
+
+:root[theme='green'] {
+  --main-hue: var(--green-hue);
+}
+
+:root[dark] {
+  --theme-darkness: 1;
+  filter: invert(1) brightness(var(--theme-darkness));
+}
